@@ -68,3 +68,8 @@ vim.g.netrw_bufsettings = "noma nomod nu nowrap ro nobl"
 -- highlight on yank
 vim.cmd("au TextYankPost * silent! lua vim.highlight.on_yank({ higroup = 'IncSearch', timeout = 200 })")
 
+-- shell
+vim.opt.shell="pwsh"
+vim.opt.shellcmdflag="-command"
+vim.opt.shellquote="\""
+vim.opt.shellxquote=""
