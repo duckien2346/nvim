@@ -7,10 +7,10 @@ return {
     keys = {
         "<A-a>",
         "<A-m>",
-              
+
         "<A-n>",
         "<A-p>",
-              
+
         "<A-1>",
         "<A-2>",
         "<A-3>",
@@ -20,7 +20,7 @@ return {
         local harpoon = require("harpoon")
         harpoon:setup()
 
-        vim.keymap.set("n", "<A-a>", function() harpoon:list():append() end)
+        vim.keymap.set("n", "<A-a>", function() harpoon:list():add() end)
         vim.keymap.set("n", "<A-m>", function() harpoon.ui:toggle_quick_menu(harpoon:list()) end)
 
         vim.keymap.set("n", "<A-n>", function() harpoon:list():next() end)

@@ -2,9 +2,11 @@ return {
     "windwp/nvim-ts-autotag",
     event = { "BufReadPost", "BufNewFile" },
     opts = {
-        enable = true,
-        enable_rename = true,
-        enable_close = true,
-        enable_close_on_slash = true,
+        opts = {
+            -- Defaults
+            renable_close = true, -- Auto close tags
+            enable_rename = true, -- Auto rename pairs of tags
+            enable_close_on_slash = false, -- Auto close on trailing </
+        },
     },
 }
